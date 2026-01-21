@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 
 html, body {
@@ -33,6 +34,9 @@ a {
     background-size: cover;
 
 @import 'navbar';
+@import 'hero';
+
+
 
 }
 

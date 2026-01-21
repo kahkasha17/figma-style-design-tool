@@ -1,0 +1,115 @@
+#hero-section {
+  height: calc(100% - 4.2rem);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  z-index: 1;
+}
+#hero-section img {
+  position: absolute;
+  right: -6%;
+  bottom: 0;
+  width: min(850px, 92vw);
+  height: auto;
+  z-index: 2;
+  transform: rotate(-12deg) translateY(20px);
+  transform-origin: bottom right;
+  filter: drop-shadow(0 30px 90px rgba(0, 0, 0, 0.65));
+  opacity: 0.95;
+}
+#hero-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+#hero-section .top,
+#hero-section .center,
+#hero-section .bottom {
+  position: relative;
+  z-index: 5;
+  width: 100%;
+  max-width: 1100px;
+  text-align: center;
+}
+#hero-section .top h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+}
+#hero-section .center {
+  margin-top: 1rem;
+}
+#hero-section .center p {
+  max-width: 700px;
+  margin: 0.8rem auto;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.78);
+}
+#hero-section .center ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+#hero-section .center ul li {
+  padding: 0.6rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+}
+#hero-section .bottom {
+  margin-top: 1.6rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+#hero-section .bottom button {
+  padding: 0.9rem 1.4rem;
+  border-radius: 2rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+#hero-section .bottom .btn {
+  background: linear-gradient(90deg, #6d5efc, #5a4cff);
+  color: white;
+}
+#hero-section .bottom .btn:hover {
+  background: linear-gradient(90deg, #8884aa, #595772);
+}
+@media (max-width: 768px) {
+  #hero-section .top h1 {
+    font-size: 2.2rem;
+  }
+  #hero-section .center p {
+    font-size: 0.95rem;
+  }
+  #hero-section .bottom button {
+    width: 100%;
+    max-width: 280px;
+  }
+}
+@media (max-width: 480px) {
+  #hero-section {
+    padding: 1.6rem 1rem;
+  }
+  #hero-section .top h1 {
+    font-size: 1.8rem;
+  }
+}/*# sourceMappingURL=hero.css.map */
