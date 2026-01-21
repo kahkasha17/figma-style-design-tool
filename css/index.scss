@@ -11,6 +11,14 @@ html, body {
   scroll-behavior: smooth;
 }
 
+body{
+  background-image: url(../assets/images/main-bk.png);
+    background-position: center;
+    // background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
 // Anchor reset
 a {
   text-decoration: none;
@@ -28,14 +36,10 @@ a {
 #main{
     height: 100%;
     width: 100%;
-    background-image: url(../assets/images/main-bk.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
+    
 @import 'navbar';
 @import 'hero';
-
+@import 'footer';
 
 
 }
